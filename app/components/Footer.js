@@ -7,11 +7,11 @@ export default function Footer() {
   return (
     <footer className="bg-[#252525] text-white p-5 pt-10">
       <div className="flex justify-center items-center flex-wrap gap-3 md:gap-7 w-full mx-auto max-w-screen-xl border-b border-gray-500 pb-8">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 ">
           <Image
             src={logo}
             alt="logo"
-            className="m-auto md:m-0 w-[40%] md:w-1/3"
+            className="m-auto md:m-0 w-[45%] md:w-1/3"
           />
           <p className=" md:text-lg w-full md:w-9/12 text-left px-4">
             Our vision is to provide convenience and help increase your
