@@ -11,7 +11,7 @@ export default function Hero() {
           Harness the Power of LLM-Based Conversational Voice AI for Phone
           Calling Applications with EchoSense AI Platform
         </h2>
-        <button className="bg-primary rounded-3xl p-3 px-20">Try now</button>
+        {/* <button className="bg-primary rounded-3xl p-3 px-20">Try now</button> */}
       </div>
     </div>
   );
