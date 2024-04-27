@@ -1,65 +1,96 @@
 import React from "react";
 import logo from "@/public/logo.svg";
 import Image from "next/image";
-import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 
-function Footer() {
+export default function Footer() {
   return (
-    <div className=" bg-[#1A1A1A] h-[250px]">
-      <div className=" h-full w-full flex flex-col">
-        <div className=" flex flex-row justify-center h-[70%] w-full">
-          <div className=" flex flex-col gap-4 ">
-            <h1 className=" text-primary font-bold flex flex-row items-center">
-              <Image
-                src={logo}
-                className="w-20 h-10 md:w-32 md:h-24 lg:w-40 lg:h-20"
-                alt="Logo"
-              />
-            </h1>
-            <h2 className=" w-[60%] text-sm font-semibold">
-              Our vision is to provide convenience and help increase your
-              business.
-            </h2>
-          </div>
-          <div className=" h-full ">
-            <form className=" h-full w-full flex flex-col gap-2 pt-8">
-              <h1 className=" text-xl font-semibold">Contact Us</h1>
-              <div className=" flex flex-row gap-1">
-                {/* <input
-                  type={"email"}
-                  placeholder="Enter your work email"
-                  className=" bg-white bg-opacity-20 rounded-2xl px-4 w-[250px]  py-2 border-1 border-purple-400 outline-none text-black text-xs"
-                /> */}
-                <Link href={"https://forms.gle/4s9uvnpQ7D2E7cjG9"}>
-                  <button className=" flex flex-row items-center bg-white border border-none rounded-2xl py-2 px-4 text-black text-xs font-semibold shadow border-gradient">
-                    Get in touch{" "}
-                    <span>
-                      <FaArrowRightLong className=" ml-1 text-purple-500" />
-                    </span>
-                  </button>
-                </Link>
-              </div>
-            </form>
-          </div>
+    <footer className="bg-[#252525] text-white p-5 pt-10">
+      <div className="flex justify-center items-center flex-wrap gap-3 md:gap-7 w-full mx-auto max-w-screen-xl border-b border-gray-500 pb-8">
+        <div className="flex flex-col gap-5">
+          <Image
+            src={logo}
+            alt="logo"
+            className="m-auto md:m-0 w-[40%] md:w-1/3"
+          />
+          <p className=" md:text-lg w-full md:w-9/12 text-left px-4">
+            Our vision is to provide convenience and help increase your
+            business.
+          </p>
         </div>
-        <div className=" h-[30%] w-full border-t-[0.1px] border-t-gray-200 border-opacity-20 flex flex-row  justify-around items-center">
-          <div>
-            <h3 className=" text-sm font-semibold">
-              &copy;2024 ECHO Sense . All rights reserved
-            </h3>
-          </div>
-          <div className=" w-[45%]">
-            <ul className=" text-sm flex flex-row justify-between  w-full font-semibold">
-              <li className=" cursor-pointer">Enterprise</li>
-              <li className=" cursor-pointer">Privacy & Policy</li>
-              <li className=" cursor-pointer">Terms & Condition</li>
-            </ul>
+        <div className="flex flex-col gap-5 w-full px-3 md:w-3/4 lg:w-1/3">
+          <p className="p-1 text-xl">Contact Us</p>
+          <div className="flex justify-between items-center gap-3 w-full">
+            <input
+              required
+              type="email"
+              placeholder="Enter your work email"
+              className="rounded-3xl w-full p-1 px-3 md:px-5 bg-white bg-opacity-30 placeholder-white text-white"
+            />
+            <div className="text-center flex align-middle justify-center">
+              <button className="bg-gradient-to-l from-[#00F0FF] via-[#5200FF] via-50% to-[#FF2DF7] to-80% rounded-full p-[0.9px]">
+                <span className="flex w-full text-xs md:text-base bg-white text-black rounded-full p-[6px] px-4 gap-2 align-middle justify-center ">
+                  Get&nbsp;in&nbsp;touch
+                  <svg
+                    className="w-[10px] md:w-3 h-4 md:h-6"
+                    viewBox="0 0 15 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.29785 6.29799H13.7234M8.28721 0.861816L13.7234 6.29799L8.28721 11.7342"
+                      stroke="url(#paint0_linear_44_26407)"
+                      strokeWidth="1.55319"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_44_26407"
+                        x1="13.0425"
+                        y1="-1.7739"
+                        x2="-1.40956"
+                        y2="-0.916673"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#00F0FF" />
+                        <stop offset="0.482483" stopColor="#5200FF" />
+                        <stop offset="1" stopColor="#FF2DF7" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-around md:pt-8">
+        <span className="text-sm sm:text-center">
+          © 2024{" "}
+          <Link href="https://flowbite.com/" className="hover:underline">
+            ECHO Sense
+          </Link>
+          . All Rights Reserved.
+        </span>
+        <ul className="flex flex-wrap md:gap-5 items-center mt-3 text-sm font-medium sm:mt-0">
+          <li>
+            <Link href="#" className="hover:underline me-4 md:me-6">
+              Enterprise
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="hover:underline me-4 md:me-6">
+              Privacy & Policy
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="hover:underline me-4 md:me-6">
+              Terms & Condition
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </footer>
   );
 }
-
-export default Footer;
