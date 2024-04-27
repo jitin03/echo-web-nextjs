@@ -7,14 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: "#E0FCFD",
-        secondary: "#394F89",
-        color: "#171717",
-        navlinks: "#486284",
-      },
+      colors: { primary: "#FF00E5", secondary: "#394F89", textColor: "white" },
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
+        montserrat: ["Manrope", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
     },
