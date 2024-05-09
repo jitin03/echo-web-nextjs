@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import donnetRight from "@/public/donnetRight.svg";
 import donnetLeft from "@/public/donnetLeft.svg";
+import DropdownArrow from "./DropDownArrow";
 export default function UseCase() {
   return (
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-5 justify-center items-center text-center">
-        <p className="text-primary font-bold text-xl">&#47;&#47; Use Case</p>
+        <p className="text-primary font-bold text-xl">&quot;Use Case&quot;</p>
         <h4 className="relative font-bold text-2xl md:text-3xl lg:text-5xl tracking-normal">
           &nbsp;&nbsp; Solutions for everything.&nbsp;&nbsp;
           <Image
@@ -49,6 +50,7 @@ export default function UseCase() {
           </div>
         </div>
       </div>
+      <DropdownArrow id="footer" />
     </div>
   );
 }

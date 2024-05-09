@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className=" bg-[#1A1A1A] h-[250px]">
+    <div className=" bg-[#1A1A1A] h-[250px]" id="footer">
       <div className=" h-full w-full flex flex-col">
         <div className=" flex flex-row justify-center h-[70%] w-full">
           <div className=" flex flex-col gap-4 ">

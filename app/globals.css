@@ -94,3 +94,28 @@ body {
   border: 2px solid
     linear-gradient(#00f0ff 4.01%, #5200ff 57.55%, #ff2df7 114.97%);
 }
+
+/* DropdownArrow.css */
+.dropdown-arrow-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  animation: bounce 1s infinite alternate; /* Bouncing animation */
+}
+
+.dropdown-arrow {
+  width: 30px;
+  height: 30px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

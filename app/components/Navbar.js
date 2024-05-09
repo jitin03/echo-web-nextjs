@@ -44,19 +44,19 @@ export default function Navbar() {
         <div className="text-xs md:text-base md:flex-grow text-center md:flex md:gap-10 text-navlinks  items-center">
           <Link
             href="#"
-            className="block mt-4 md:inline-block md:mt-0 text-white-200 hover:font-semibold hover:delay-150"
+            className="block mt-4 md:inline-block md:mt-0 text-white-200 hover:font-semibold hover:delay-150 hover:text-[#FF00E5]"
           >
             Home
           </Link>
           <Link
             href="#"
-            className="block mt-4 md:inline-block md:mt-0 text-white-200  hover:font-semibold hover:delay-150"
+            className="block mt-4 md:inline-block md:mt-0 text-white-200  hover:font-semibold hover:delay-150 hover:text-[#FF00E5]"
           >
             About Us
           </Link>
           <Link
             href="#"
-            className="block mt-4 md:inline-block md:mt-0 text-white-200   hover:font-semibold hover:delay-150"
+            className="block mt-4 md:inline-block md:mt-0 text-white-200   hover:font-semibold hover:delay-150 hover:text-[#FF00E5]"
           >
             Dashboard
           </Link>

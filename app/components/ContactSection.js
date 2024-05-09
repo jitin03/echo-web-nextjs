@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ContactForm from "./ContactForm";
 import ContactWebcall from "./ContactWebcall";
 import { FaArrowRightLong } from "react-icons/fa6";
+import DropdownArrow from "./DropDownArrow";
 
 export default function ContactSection() {
   const [activeTab, setActiveTab] = useState("call");
@@ -16,7 +17,7 @@ export default function ContactSection() {
     <div className="container mx-auto px-5">
       <div className="flex flex-col gap-5 justify-center items-center text-center">
         <p className="text-primary font-bold text-xl">
-          &#47;&#47; Feel the state-of-art Voice Interaction
+          &quot;Feel the state-of-art Voice Interaction&quot;
         </p>
         <h3 className="w-full md:w-3/4 lg:w-1/2 font-bold text-2xl md:text-3xl lg:text-5xl tracking-normal">
           See A Live Demo With A Restaurant reservation
@@ -53,6 +54,7 @@ export default function ContactSection() {
           {activeTab === "call" && <ContactForm />}
           {activeTab === "webcall" && <ContactWebcall />}
         </div> */}
+        <DropdownArrow id="usecase" />
       </div>
     </div>
   );
