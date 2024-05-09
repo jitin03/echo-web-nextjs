@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="flex items-center flex-shrink-0 flex-grow text-white">
         <Image
           src={logo}
-          className="w-20 h-10 md:w-32 md:h-24 lg:w-40 lg:h-20"
+          className="w-28 h-10 md:w-32 md:h-24 lg:w-40 lg:h-20"
           alt="Logo"
         />
       </div>
